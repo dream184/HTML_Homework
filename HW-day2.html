@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+</head>
+<style type="text/css">
+  strong {
+    font-weight: bold;
+  }
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 68px;
+    border: 1px solid red;
+  }
+
+  .header .logo {
+    display: flex;
+    /* display: inline-block; */
+    border: 1px solid red;
+    text-decoration: none;
+  }
+
+
+  .header img {
+    height: 19px;
+    width: 40px;
+  }
+
+  .logo_pic {
+    border: 1px solid yellow;
+    margin: auto 0px;
+  }
+
+  .logo_name {
+    border: 1px solid red;
+
+  }
+
+  .logo_name a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    /* border: 1px solid blue; */
+    line-height: 68px;
+  }
+
+  nav {
+    text-align: right;  
+  }
+
+  nav a {
+    display: inline-block;
+    /* displsy: block; */
+    text-decoration: none;
+    border: 1px solid red;
+    line-height: 68px;
+
+    
+    font-size: 18px;
+    /* padding: 20px 0; */
+    margin: 0 10px;
+    color: black;
+  }
+
+  .banner_img {
+    border: 1px solid red;
+    background-color: #2E3441;
+  }
+
+
+
+  .banner {
+    /* border: 1px solid red; */
+    margin: 100px;
+
+  }
+
+  .banner_title {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .banner p {
+    color: white;
+    margin-bottom: 65px;
+    font-size: 20px;
+  }
+
+  .banner a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+  }
+
+  .feature_area h3 {
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    margin: 40px;
+    /* border: 1px solid red; */
+  }
+
+  .feature_intro {
+    font-size: 20px;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+  .three_features {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+  }
+
+  .feature img {
+    display: block;
+    width: 230px;
+    height: 175px;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+
+  .feature {
+    /* border: 1px solid red; */
+  }
+
+  .feature h4 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .feature p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .group_intro {
+    /* border: 1px solid red; */
+    margin-bottom: 40px;
+  }
+
+  .intro_title {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .group_intro h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 24px;
+    padding: 0 0 8px;
+  }
+
+  .group_intro h4 {
+    font-size: 20px;
+  }
+
+  .teacher_group {
+    background-color: #F9FAFB;
+    padding: 40px 0 0;
+    margin: 80px 0 0;
+  }
+
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1230px;
+    height: 1280px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+
+    background-color: #F9FAFB;
+  }
+
+  .teacher {
+    width: 600px;
+    height: 623px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+  }
+
+  .profile {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 0 0 12px;
+  }
+
+  .avatar img {
+    border-radius: 50%;
+  }
+
+  .experience {
+    padding: 20px 10px;
+  }
+
+  .experience p {
+    /* border: 1px solid red; */
+    line-height: 1.5;
+    padding: 0 0 10px 0;
+  }
+
+  .experience a {
+    color: red;
+    text-decoration: none;
+  }
+
+  .other_courses p {
+    margin: 0 0 0 10px;
+  }
+
+  .course_title {
+    margin: 15px 0 0 10px;
+  }
+
+  .course_title a {
+    display: inline-block;
+    border: 1px solid red;
+    color: red;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 4px 12px;
+  }
+
+
+  .teacher img {
+    height: 160px;
+    width: 160px;
+
+
+  }
+
+  .teacher_name p {
+    padding: 0 0 8px;
+    margin: 30px 0 20px 24px;
+    font-size: 16px;
+  }
+
+  .teacher_name h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 0 24px;
+  }
+
+  .media_reports {
+    padding: 32px 24px 224px;
+    /* border: 1px solid red; */
+    background-color: #F9FAFB;
+
+  }
+
+  .media_reports h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 12px;
+
+
+  }
+
+  .report_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    width: 978px;
+    height: 365px;
+    margin: 0 auto;
+    margin: 64px auto 48px;
+  }
+
+  .report {
+    display: inline-block;
+    width: 470px;
+    height: 100px;
+    /* border: 1px solid red; */
+  }
+
+  .report h4 {
+    padding: 0 0 12px;
+  }
+
+  .report h4 a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .report span {
+    font-size: 16px;
+    color: 6C727F;
+  }
+
+  .more_reports {
+    text-align: center;
+
+  }
+
+  .more_reports a {
+    font-size: 18px;
+    background-color: red;
+    padding: 12px 32px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+
+  }
+
+  .minicourses {
+    background-color: #29303E;
+    padding: 80px 24px;
+    border: 1px red;
+  }
+
+  .short_term_course h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    
+    padding: 0 0 12px;
+    margin: 0 0 32px;
+  }
+
+  .short_term_course h4 {
+    font-size: 20px;
+    color: #A0A6B1;
+  }
+
+  .course_intro {
+    width: 1028px;
+    height: 384px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .short_term_course {
+    width: 480px;
+    height: 380px;
+    /* border: 1px solid red; */
+
+
+
+  }
+
+  .short_term_course2 {
+    width: 480px;
+    height: 380px;
+    /* border: 1px solid red; */
+    display: flex;
+    
+
+
+  }
+
+  
+  .front_end_course h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 15px;
+
+  }
+
+  .front_end_course p {
+    font-size: 16px;
+    margin: 0 0 24px;
+
+  }
+
+  .front_end_course a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .front_end_course {
+    width: 100%;
+    height: 250px;
+    line-height: 1.5;
+    /* border: 1px solid red; */
+    margin: auto 0 auto;
+    padding: 20px;
+    
+    background-color: #FF133E;
+    color: #fff;
+  }
+
+  .recent_courses h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;;
+  }
+
+
+  .course {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 48px;
+  }
+
+  .july_course {
+    width: 385px;
+    border-radius: 8%;
+
+    
+  }
+  .july_course img {
+    vertical-align: bottom;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .course_detail img {
+    width: 100%;
+  }
+
+  .information {
+   
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .course_time {
+    margin: 0 0 12px;
+    padding: 0 0 16px;
+    border-bottom: 1px solid #A0A6B1;
+  }
+
+  .course_time span {
+    font-size: 12px;
+    color: #A0A6B1;
+    border: 1px solid #A0A6B1;
+    padding: 6px;
+  }
+
+  .lecturer {
+    width: 100%;
+    font-size: 16px;
+    color: #A0A6B1;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+  }
+
+  .advanced_course {
+    color: red;
+    /* border: 1px solid red; */
+  }
+  .beginner_course {
+    color: #34D339;;
+  }
+
+  .name {
+    /* border: 1px solid red; */
+  }
+
+  .more_courses {
+    width: 100%;
+    
+    text-align: center;
+  }
+  .more_courses a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 32px;
+    background-color:#FF1331 ;   
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .recent_courses {
+    padding: 40px 0 0;
+  }
+
+  
+
+</style>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <div class="logo_pic">
+        <img src="img/logo.svg" alt="logo">
+      </div>
+      <div class="logo_name">
+        <a href="">五倍紅寶石・專業程式教育機構</a>
+      </div>
+    </div>
+
+    <nav>
+      <a href="＃">全方位培訓營</a>
+      <a href="＃">ASTRO CAMP</a>
+      <a href="＃">線上課程</a>
+      <a href="＃">短期課程</a>
+      <a href="＃">專欄文章</a>
+      <a href="＃">最新消息</a>
+    </nav>
+  </div>
+
+  <section class="banner_img">
+    <div class="banner">
+      <h1 class="banner_title">五倍學習，突破你的可能性</h1>
+      <p class="banner_intro">掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
+      <a href="#">立即選課</a>
+    </div>
+  </section>
+
+  <section class="feature_area">
+    <h3>不只停留在教你釣魚，更引領你乘風破浪</h3>
+    <p class="feature_intro">我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</p>
+
+    <div class="three_features">
+
+      <div class="feature">
+        <img src="img/img_feature1.webp" alt="feature1">
+        <h4>鍛鍊實力，主導學習</h4>
+        <p>搭配最新技術版本，掌握業界脈動，<br />
+          與需求緊密結合，鍛鍊程式實力。</p>
+      </div>
+
+      <div class="feature">
+        <img src="img/img_feature2.webp" alt="feature2">
+        <h4>完整規劃，絕不漏接</h4>
+        <p>線上補課、線下討論與社群活動，<br />
+          確保學員擁有充份且多元的學習資源和支持系統。<br />
+      </div>
+
+      <div class="feature">
+        <img src="img/img_feature3.webp" alt="feature3">
+        <h4>挑戰困境，突破職涯</h4>
+        <p>無論新手跨領域轉職，或在職工程師深度進修，<br />
+          讓五倍為你解構學習，突破困境。</p>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="teacher_group">
+    <div class="group_intro">
+      <div class="intro_title">
+        <h2>講師陣容</h2>
+        <h4>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+        </h4>
+      </div>
+    </div>
+
+    <div class="teachers">
+      <div class="teacher">
+        <div class="profile">
+          <div class="avatar">
+            <img src="img/amos.webp" alt="amos">
+          </div>
+          <div class="teacher_name">
+            <p>HTML / CSS 講師</p>
+            <h3>李建杭 (Amos Lee)</h3>
+            <div class="social_media">
+
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 <strong>HTML & CSS、Bootstrap、RWD、CSS3</strong> 等，為國內知名前端技術講師。</p>
+          <p>2018 年成為 <a href="">Youtuber</a>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+          <p><a href="">iT 邦幫忙鐵人賽連續</a><strong>三屆冠軍</strong>、連續<strong>兩屆優選</strong>，於 2020 出版「<a href="">都能懂的 CSS
+              選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a>」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+        </div>
+
+        <div class="other_courses">
+          <p>講師其他課程</p>
+        </div>
+        <div class="course_title">
+          <a href="#">網頁前端設計女性專班</a>
+          <a href="#">HTML網頁設計新手村</a>
+        </div>
+      </div>
+      <div class="teacher">
+        <div class="profile">
+          <div class="avatar">
+            <img src="img/Eddi.webp" alt="amos">
+          </div>
+          <div class="teacher_name">
+            <p>Ruby / Git 講師</p>
+            <h3>高見龍 (Eddie Kao)</h3>
+            <div class="social_media">
+
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <p>五倍紅寶石程式資訊教育股份有限公司負責人，在國內外各大型技術研討會擔任講者，參與過日本 RubyKaigi、日本 Ruby World Conference、臺灣微軟 Azure Developer
+            Day、RubyConf
+            Taiwan、JSDC、WebConf 等。有二十年程式開發經驗和十多年的教學經驗，在臺灣推廣 Ruby 及 Git 多年，在各大專院校與企業開課，深受學員喜愛。
+          </p>
+          <p>雖非資訊本科系出身，但喜歡寫程式，而且希望可以寫一輩子程式的電腦阿宅。
+          </p>
+          <p>著有「<a href="">為你自己學 Git</a>」與「<a href="">為你自己學 Ruby on Rails</a>」暢銷技術書。
+          </p>
+        </div>
+
+        <div class="other_courses">
+          <p>講師其他課程</p>
+        </div>
+        <div class="course_title">
+          <a href="#">Ruby on Rails實戰課程</a>
+          <a href="#">坐上 Git 時光機 - 版本控制</a>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="teacher">
+        <div class="profile">
+          <div class="avatar">
+            <img src="img/Kuro.webp" alt="amos">
+          </div>
+          <div class="teacher_name">
+            <p>Vue / JavaScript 講師</p>
+            <h3>許國政 (Kuro Hsu)</h3>
+            <div class="social_media">
+
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <p>業界資深前端開發者，為臺灣各大型技術研討會 JSDC、WebConf、MOPCON、COSCUP 的知名講者。
+          </p>
+          <p>於 2019 年出版「0 陷阱！0 誤解！8 天重新認識 JavaScript！」，攻佔各大技術書籍排行榜。
+          </p>
+          <p>同時身兼 Vue.js Taiwan 社群主辦人，主辦的活動場場秒殺一票難求，衍伸開發的週邊商品精緻實用，譽為被程式耽誤的週邊商品業者。
+          </p>
+        </div>
+
+        <div class="other_courses">
+          <p>講師其他課程</p>
+        </div>
+        <div class="course_title">
+          <a href="#">Vue.js 與 Vuex 前端開發實戰</a>
+          <a href="#">JavaScript / jQuery 前端開發入門實戰</a>
+        </div>
+      </div>
+
+      <div class="teacher">
+        <div class="profile">
+          <div class="avatar">
+            <img src="img/milkmidi.webp" alt="amos">
+          </div>
+          <div class="teacher_name">
+            <p>React 講師</p>
+            <h3>廖珀均 (奶綠茶)</h3>
+            <div class="social_media">
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <p>資深前端開發者與程式開發講師，授課資歷十年以上。
+          </p>
+          <p>擅長 HTML、CSS、JavaScript、jQuery、Vue、React 開發應用與 Webpack 前端打包工具等，專修各種前端跨平台的疑難雜症。</p>
+          <p>另一個身份為花鬍子樂團吉他手，育有二貓，喜愛小酌。</p>
+        </div>
+
+        <div class="other_courses">
+          <p>講師其他課程</p>
+        </div>
+        <div class="course_title">
+          <a href="#">React 全攻略入門班</a>
+        </div>
+      </div>
+  </section>
+
+  <section class="media_reports">
+    <h2>媒體報導</h2>
+    <div class="report_contents">
+      <div class="report_content">
+        <div class="report">
+          <h4><a href="">想當高薪工程師 備妥三大關鍵能力求職更順暢</a></h4>
+          <span>中時新聞網・2021/01</span>
+        </div>
+        <div class="report">
+          <h4><a href="">營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！
+            </a></h4>
+          <span>EnglishOK・2020/03</span>
+        </div>
+        <div class="report">
+          <h4><a href="">教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！
+            </a></h4>
+          <span>天下雜誌・2020/02</span>
+        </div>
+        <div class="report">
+          <h4><a href="">從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職
+            </a></h4>
+          <span>天下雜誌・2020/01</span>
+        </div>
+        <div class="report">
+          <h4><a href="">勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day
+            </a></h4>
+          <span>INSIDE・2019/07</span>
+        </div>
+        <div class="report">
+          <h4><a href="">無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師
+            </a></h4>
+          <span>INSIDE・2019/01</span>
+        </div>
+      </div>
+
+      <div class="more_reports">
+        <a href="#">更多報導</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="minicourses">
+    <div class="course_intro">
+      <div class="short_term_course">
+        <h2>短期實體課程</h2>
+        <h4>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</h4>
+      </div>
+      <div class="short_term_course2">
+        <div class="front_end_course">
+          <h4>前端課程</h4>
+          <p>除了基礎的HTML、CSS、JavaScript，還包含 React、 Vue 兩大前端框架。讓五倍講師帶你入門，打好網頁前端基礎!</p>
+          <a href="">前往課程 > </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="recent_courses">
+      <h3>近期課程</h3>
+      <div class="course">
+        <div class="course_detail">
+          <div class="july_course">
+            <img src="img/Vue-js-Banner-600x315.webp" alt="vue.js">
+            <div class="information">
+              <div class="course_time">
+                <span>2021/7月班</span>
+              </div>
+              <div class="lecturer">
+                <span class="name">講師:許國政 (Kuro Hsu)</span>
+                <span class="advanced_course">進階課程</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course_detail">
+          <div class="july_course">
+            <img src="img/Ruby-Banner-600x315.webp" alt="vue.js">
+            <div class="information">
+              <div class="course_time">
+                <span>2021/7月班</span>
+              </div>
+              <div class="lecturer">
+                <span class="name">講師:高見龍 (Eddie kao)</span>
+                <span class="advanced_course">進階課程</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course_detail">
+          <div class="july_course">
+            <img src="img/Code-for-girl-Banner-600x315.webp" alt="vue.js">
+            <div class="information">
+              <div class="course_time">
+                <span>2021/10月班</span>
+              </div>
+              <div class="lecturer">
+                <span class="name">講師:李建杭 (Amos Lee)</span>
+                <span class="beginner_course">入門課程</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="more_courses">
+        <a href="#">看更多課程</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="learning path">
+    <h2>掌握自己的學習路徑</h2>
+    <h4>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h4>
+    <div class="learning_plans">
+
+      <div class="learning_plan">
+        
+      </div>
+      <div class="learning_plan"></div>
+      <div class="learning_plan"></div>
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
