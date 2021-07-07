@@ -55,7 +55,7 @@
   }
 
   nav {
-    text-align: right;  
+    text-align: right;
   }
 
   nav a {
@@ -65,7 +65,7 @@
     border: 1px solid red;
     line-height: 68px;
 
-    
+
     font-size: 18px;
     /* padding: 20px 0; */
     margin: 0 10px;
@@ -338,7 +338,7 @@
     color: #fff;
     font-size: 30px;
     font-weight: bold;
-    
+
     padding: 0 0 12px;
     margin: 0 0 32px;
   }
@@ -371,12 +371,12 @@
     height: 380px;
     /* border: 1px solid red; */
     display: flex;
-    
+
 
 
   }
 
-  
+
   .front_end_course h4 {
     font-size: 24px;
     font-weight: bold;
@@ -402,7 +402,7 @@
     /* border: 1px solid red; */
     margin: auto 0 auto;
     padding: 20px;
-    
+
     background-color: #FF133E;
     color: #fff;
   }
@@ -410,7 +410,8 @@
   .recent_courses h3 {
     font-size: 24px;
     color: #fff;
-    font-weight: bold;;
+    font-weight: bold;
+    ;
   }
 
 
@@ -424,8 +425,9 @@
     width: 385px;
     border-radius: 8%;
 
-    
+
   }
+
   .july_course img {
     vertical-align: bottom;
     border-radius: 8px 8px 0 0;
@@ -436,7 +438,7 @@
   }
 
   .information {
-   
+
     padding: 20px;
     background-color: #fff;
     border-radius: 0 0 8px 8px;
@@ -468,8 +470,10 @@
     color: red;
     /* border: 1px solid red; */
   }
+
   .beginner_course {
-    color: #34D339;;
+    color: #34D339;
+    ;
   }
 
   .name {
@@ -478,15 +482,16 @@
 
   .more_courses {
     width: 100%;
-    
+
     text-align: center;
   }
+
   .more_courses a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 12px 32px;
-    background-color:#FF1331 ;   
+    background-color: #FF1331;
     border-radius: 8px;
     font-size: 18px;
   }
@@ -495,8 +500,110 @@
     padding: 40px 0 0;
   }
 
-  
+  .learning_path_div {
+    width: 1230px;
+    margin: 25px;
+    border: 1px solid red;
 
+  }
+
+  .learning_path_div h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 12px;
+    margin: 0 0 32px;
+  }
+
+  .learning_path_div h4 {
+    font-size: 20px;
+  }
+
+  .learning_plans_div {
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0 0 0;
+
+    border: 1px solid red;
+
+  }
+
+  .learning_plan {
+    border: 1px solid red;
+    width: 370px;
+
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  .plan_img.a {
+    background-image: linear-gradient(rgba(24, 35, 45, 0.4), rgba(24, 35, 45, 0.4)), url("https://60e2e3bf37f112ab3d19019b--5xtraining.netlify.app/_next/static/images/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png");
+  }
+
+  .plan_img.b {
+    background-image: linear-gradient(rgba(24, 35, 45, 0.4), rgba(24, 35, 45, 0.4)), url("https://60e2e3bf37f112ab3d19019b--5xtraining.netlify.app/_next/static/images/learning-fullStack-fbd2867387497421c842cdb85a2464a7.png");
+  }
+
+  .plan_img.c {
+    background-image: linear-gradient(rgba(24, 35, 45, 0.4), rgba(24, 35, 45, 0.4)), url("https://60e2e3bf37f112ab3d19019b--5xtraining.netlify.app/_next/static/images/learning-astro_camp-64eb918a606cc2d3b75bae289447aee8.png");
+  }
+
+
+  .plan_img {
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+
+
+
+
+  .plan_img h3 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .plan_intro_div {
+    padding: 20px;
+    flex-grow: 1;
+    border: 1px solid red;
+    position: relative;
+
+  }
+
+  .plan_intro_div h4 {
+    font-size: 20px;
+    padding: 0 0 12px;
+    font-weight: bold;
+
+  }
+
+  .plan_intro_div p {
+    font-size: 16px;
+    margin: 16px 0;
+    line-height: 1;
+
+  }
+
+  .plan_intro_div a {
+    font-size: 16px;
+    color: #ff133E;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid red;
+  }
 </style>
 
 <body>
@@ -808,17 +915,70 @@
   </section>
 
 
-  <section class="learning path">
-    <h2>掌握自己的學習路徑</h2>
-    <h4>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h4>
-    <div class="learning_plans">
+  <section class="learning path_section">
+    <div class="learning_path_div">
+      <h2>掌握自己的學習路徑</h2>
+      <h4>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h4>
+      <div class="learning_plans_div">
+        <div class="learning_plan ">
+          <div class="plan_img a">
+            <h3>
+              I'm coding it!
+              <br>
+              微痛轉職工程師
+            </h3>
+          </div>
+          <div class="plan_intro_div">
+            <h4>線上課程</h4>
+            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+            <a href="#">前往課程 ></a>
+          </div>
+        </div>
 
-      <div class="learning_plan">
-        
+
+        <div class="learning_plan">
+          <div class="plan_img b">
+            <h3>
+              全方位
+              <br>
+              網頁設計前後實戰
+            </h3>
+          </div>
+          <div class="plan_intro_div">
+            <h4>全方位培訓營</h4>
+            <p>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</p>
+            <a href="#">前往課程 ></a>
+          </div>
+        </div>
+
+
+        <div class="learning_plan">
+          <div class="plan_img c">
+
+            <h3>
+              ASTRO Camp
+              <br>
+              全端工程師實戰訓練營
+            </h3>
+          </div>
+          <div class="plan_intro_div">
+            <h4>三個月實戰轉職全端工程師</h4>
+            <p>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</p>
+            <a href="#">前往課程 ></a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div class="learning_plan"></div>
-      <div class="learning_plan"></div>
-
 
     </div>
 
