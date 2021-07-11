@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
+  <script src="https://kit.fontawesome.com/8f41ff9b37.js" crossorigin="anonymous"></script>
 </head>
 <style type="text/css">
   strong {
@@ -25,13 +26,13 @@
     background-color: white;
     width: 100%;
     height: 68px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .header .logo {
     display: flex;
     /* display: inline-block; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-decoration: none;
   }
 
@@ -47,7 +48,8 @@
   }
 
   .logo_name {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    font-weight: bold;
 
   }
 
@@ -67,10 +69,8 @@
     display: inline-block;
     /* displsy: block; */
     text-decoration: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     line-height: 68px;
-
-
     font-size: 18px;
     /* padding: 20px 0; */
     margin: 0 10px;
@@ -78,7 +78,7 @@
   }
 
   .banner_img {
-    border: 1px solid red;
+    border: 1px solid #2E3441;
     background-color: #2E3441;
   }
 
@@ -89,6 +89,26 @@
     margin: 100px;
 
   }
+
+  .banner_style {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    background-color: #2E3441;
+    clip-path: polygon(0 0, 30% 75%, 100% 0);
+  }
+
+
+
+  .banner_style .one {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    /* background-color: #2E3441; */
+    /* border: 1px solid red; */
+  }
+
+
 
   .banner_title {
     color: white;
@@ -141,9 +161,6 @@
     /* border: 1px solid red; */
   }
 
-  .feature {
-    /* border: 1px solid red; */
-  }
 
   .feature h4 {
     font-weight: bold;
@@ -158,13 +175,24 @@
     line-height: 1.3;
   }
 
+  .div_style_bar {
+    width: 100%;
+    background-color: #F9FAFB;
+    height: 150px;
+    margin: 80px 0 0 0;
+    clip-path: polygon(20% 0, 0% 100%, 100% 100%);
+
+  }
+
   .group_intro {
     /* border: 1px solid red; */
     margin-bottom: 40px;
   }
 
   .intro_title {
-    width: 50%;
+    width: 1110px;
+    padding: 50px 0px 50px 120px;
+    /* border: 1px solid red; */
     margin: 0 auto;
   }
 
@@ -183,7 +211,7 @@
   .teacher_group {
     background-color: #F9FAFB;
     padding: 40px 0 0;
-    margin: 80px 0 0;
+    margin: 0px 0 0;
   }
 
   .teachers {
@@ -268,10 +296,9 @@
   }
 
   .media_reports {
-    padding: 32px 0px 224px;
-    border: 1px solid red;
+    padding: 32px 0px 0px;
+    /* border: 1px solid red; */
     background-color: #F9FAFB;
-
 
   }
 
@@ -280,7 +307,12 @@
     font-weight: bold;
     text-align: center;
     padding: 0 0 12px;
+  }
 
+  .container_report_content {
+    width: 1230px;
+    /* border: 1px solid red; */
+    margin: auto;
 
   }
 
@@ -289,17 +321,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     /* border: 1px solid red; */
-    width: 978px;
-    height: 365px;
-    margin: 0 auto;
-    margin: 64px auto 48px;
+    margin: 64px 0 48px;
   }
 
   .report {
-    display: inline-block;
-    width: 470px;
+    width: 575px;
     height: 100px;
-    /* border: 1px solid red; */
   }
 
   .report h4 {
@@ -311,6 +338,7 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
+    margin-bottom: 50px;
   }
 
   .report span {
@@ -332,6 +360,15 @@
     border-radius: 8px;
     text-align: center;
 
+    display: inline-block;
+    margin-bottom: 50px;
+
+  }
+
+  .div_style_bar_2 {
+    height: 150px;
+    background-color: #29303E;
+    clip-path: polygon(30% 0, 0% 100%, 100% 100%);
   }
 
   .minicourses {
@@ -340,11 +377,26 @@
     border: 1px red;
   }
 
+
+  .div_style_bar_3 {
+    height: 150px;
+    background-color: #29303E;
+    clip-path: polygon(0 0, 100% 0, 65% 100%);
+    margin-bottom: 80px;
+
+  }
+
+
+
+
+
+
+
+
   .short_term_course h2 {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
-
     padding: 0 0 12px;
     margin: 0 0 32px;
   }
@@ -377,6 +429,9 @@
     height: 380px;
     /* border: 1px solid red; */
     display: flex;
+    clip-path: polygon(0 15%, 75% 0%, 100% 14%, 100% 85%, 27% 100%, 0 86%);
+    background-color: #FF133E;
+
 
 
 
@@ -413,11 +468,19 @@
     color: #fff;
   }
 
+  .container_courses {
+    width: 1230px;
+    margin: auto;
+
+
+  }
+
   .recent_courses h3 {
     font-size: 24px;
     color: #fff;
     font-weight: bold;
     ;
+    text-align: center;
   }
 
 
@@ -482,9 +545,6 @@
     ;
   }
 
-  .name {
-    /* border: 1px solid red; */
-  }
 
   .more_courses {
     width: 100%;
@@ -506,12 +566,16 @@
     padding: 40px 0 0;
   }
 
+  .learning_path_section {
+    background-color: #F9FAFB;
+  }
+
 
 
   .learning_path_div {
     width: 1230px;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
   }
 
@@ -532,12 +596,12 @@
     justify-content: space-between;
     margin: 48px 0 0 0;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
   }
 
   .learning_plan {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 370px;
 
     display: flex;
@@ -568,7 +632,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    vertical-align: top;
   }
 
 
@@ -584,8 +649,9 @@
   .plan_intro_div {
     padding: 20px;
     flex-grow: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
+    background-color: #fff;
 
   }
 
@@ -616,6 +682,9 @@
   .corner_style {
     width: 100%;
     height: 160px;
+    background-color: #F9FAFB;
+    clip-path: polygon(0 0, 100% 0, 31% 100%);
+    margin-bottom: 50px;
   }
 
   .title_experiences {
@@ -634,7 +703,7 @@
     justify-content: space-between;
     width: 1230px;
     height: 450px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .div_experience_card .experience {
@@ -642,7 +711,9 @@
 
     margin: 0 15px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
+
+    box-shadow: 0px 0px 5px #888888;
 
   }
 
@@ -676,7 +747,7 @@
     text-align: center;
     margin: 0 0 32px;
     padding: 0 0 12px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .div_articles {
@@ -691,8 +762,9 @@
 
   .div_article {
     width: 380px;
+    box-shadow: 0px 0px 10px #cccccc;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .div_article img {
@@ -730,13 +802,14 @@
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
+    margin-bottom: 80px;
 
   }
 
   .container_footer {
 
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 580px;
     margin: 64px 24px 32px;
     /* background-color: #29303E; */
@@ -747,12 +820,12 @@
   .company_information {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-grow: 4;
   }
 
   .div_footer_link_items {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-grow: 6;
     flex-wrap: wrap;
@@ -786,13 +859,14 @@
 
   .link_item {
     width: 33%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
   }
 
   .section_footer_background {
     width: 100%;
     background-color: #29303E;
+    padding: 60px 0 60px 0;
   }
 
   .footer_5xRuby {
@@ -800,12 +874,61 @@
     display: inline-block;
     color: #A0A6B1;
     background-color: #181E2D;
-    padding: 26px 8px;
+    padding: 26px 0px;
     text-align: center;
+  }
+
+  .social_media {
+    font-size: 125%;
+    margin: 20px 0 0 24px;
+  }
+
+  .social_media a {
+    color: #aaa;
+    margin: 0 10px 0 0;
+  }
+
+  .social_media a:hover {
+    color: #394150;
+
+  }
+
+  .div_footer_content {
+    width: 100%;
+    background-color: #29303E;
+  }
+
+  .footer_icons {
+    width: 1230px;
+    margin: auto;
+    text-align: center;
+  }
+
+
+
+  .footer_icons a {
+    display: inline-block;
+    font-size: 210%;
+    color: #999;
+    padding: 16xp 20px;
+    margin: 0 20px;
+  }
+
+  .footer_icons a:hover {
+    color: #D3D6DB;
+    padding: 16xp 20px;
+  }
+
+  .corner_style2 {
+    width: 100%;
+    height: 150px;
+    clip-path: polygon(26% 0, 0% 100%, 100% 100%);
+    background: #29303E;
   }
 </style>
 
 <body>
+
   <div class="header">
     <div class="logo">
       <div class="logo_pic">
@@ -832,7 +955,12 @@
       <p class="banner_intro">掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
       <a href="#">立即選課</a>
     </div>
+
   </section>
+
+  <div class="banner_style">
+    <div class="one"></div>
+  </div>
 
   <section class="feature_area">
     <h3>不只停留在教你釣魚，更引領你乘風破浪</h3>
@@ -865,11 +993,15 @@
 
   </section>
 
+  <div class="div_style_bar">
+  </div>
+
   <section class="teacher_group">
     <div class="group_intro">
       <div class="intro_title">
         <h2>講師陣容</h2>
-        <h4>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+        <h4>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課</br>
+          方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
         </h4>
       </div>
     </div>
@@ -884,7 +1016,9 @@
             <p>HTML / CSS 講師</p>
             <h3>李建杭 (Amos Lee)</h3>
             <div class="social_media">
-
+              <a href=""><i class="fas fa-globe"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
@@ -912,6 +1046,11 @@
             <p>Ruby / Git 講師</p>
             <h3>高見龍 (Eddie Kao)</h3>
             <div class="social_media">
+              <a href=""><i class="fas fa-globe"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
 
             </div>
           </div>
@@ -950,6 +1089,9 @@
             <p>Vue / JavaScript 講師</p>
             <h3>許國政 (Kuro Hsu)</h3>
             <div class="social_media">
+              <a href=""><i class="fas fa-globe"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-github"></i></a>
 
             </div>
           </div>
@@ -981,6 +1123,9 @@
             <p>React 講師</p>
             <h3>廖珀均 (奶綠茶)</h3>
             <div class="social_media">
+              <a href=""><i class="fas fa-globe"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -1003,35 +1148,37 @@
   <section class="media_reports">
     <h2>媒體報導</h2>
     <div class="report_contents">
-      <div class="report_content">
-        <div class="report">
-          <h4><a href="">想當高薪工程師 備妥三大關鍵能力求職更順暢</a></h4>
-          <span>中時新聞網・2021/01</span>
-        </div>
-        <div class="report">
-          <h4><a href="">營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！
-            </a></h4>
-          <span>EnglishOK・2020/03</span>
-        </div>
-        <div class="report">
-          <h4><a href="">教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！
-            </a></h4>
-          <span>天下雜誌・2020/02</span>
-        </div>
-        <div class="report">
-          <h4><a href="">從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職
-            </a></h4>
-          <span>天下雜誌・2020/01</span>
-        </div>
-        <div class="report">
-          <h4><a href="">勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day
-            </a></h4>
-          <span>INSIDE・2019/07</span>
-        </div>
-        <div class="report">
-          <h4><a href="">無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師
-            </a></h4>
-          <span>INSIDE・2019/01</span>
+      <div class="container_report_content">
+        <div class="report_content">
+          <div class="report">
+            <h4><a href="">想當高薪工程師 備妥三大關鍵能力求職更順暢</a></h4>
+            <span>中時新聞網・2021/01</span>
+          </div>
+          <div class="report">
+            <h4><a href="">營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！
+              </a></h4>
+            <span>EnglishOK・2020/03</span>
+          </div>
+          <div class="report">
+            <h4><a href="">教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！
+              </a></h4>
+            <span>天下雜誌・2020/02</span>
+          </div>
+          <div class="report">
+            <h4><a href="">從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職
+              </a></h4>
+            <span>天下雜誌・2020/01</span>
+          </div>
+          <div class="report">
+            <h4><a href="">勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day
+              </a></h4>
+            <span>INSIDE・2019/07</span>
+          </div>
+          <div class="report">
+            <h4><a href="">無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師
+              </a></h4>
+            <span>INSIDE・2019/01</span>
+          </div>
         </div>
       </div>
 
@@ -1039,7 +1186,13 @@
         <a href="#">更多報導</a>
       </div>
     </div>
+
+    <div class="div_style_bar_2">
+    </div>
   </section>
+
+
+
 
   <section class="minicourses">
     <div class="course_intro">
@@ -1048,57 +1201,61 @@
         <h4>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</h4>
       </div>
       <div class="short_term_course2">
+
         <div class="front_end_course">
           <h4>前端課程</h4>
           <p>除了基礎的HTML、CSS、JavaScript，還包含 React、 Vue 兩大前端框架。讓五倍講師帶你入門，打好網頁前端基礎!</p>
           <a href="">前往課程 > </a>
         </div>
+
       </div>
     </div>
 
     <div class="recent_courses">
       <h3>近期課程</h3>
-      <div class="course">
-        <div class="course_detail">
-          <div class="july_course">
-            <img src="img/Vue-js-Banner-600x315.webp" alt="vue.js">
-            <div class="information">
-              <div class="course_time">
-                <span>2021/7月班</span>
-              </div>
-              <div class="lecturer">
-                <span class="name">講師:許國政 (Kuro Hsu)</span>
-                <span class="advanced_course">進階課程</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course_detail">
-          <div class="july_course">
-            <img src="img/Ruby-Banner-600x315.webp" alt="vue.js">
-            <div class="information">
-              <div class="course_time">
-                <span>2021/7月班</span>
-              </div>
-              <div class="lecturer">
-                <span class="name">講師:高見龍 (Eddie kao)</span>
-                <span class="advanced_course">進階課程</span>
+      <div class="container_courses">
+        <div class="course">
+          <div class="course_detail">
+            <div class="july_course">
+              <img src="img/Vue-js-Banner-600x315.webp" alt="vue.js">
+              <div class="information">
+                <div class="course_time">
+                  <span>2021/7月班</span>
+                </div>
+                <div class="lecturer">
+                  <span class="name">講師:許國政 (Kuro Hsu)</span>
+                  <span class="advanced_course">進階課程</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="course_detail">
-          <div class="july_course">
-            <img src="img/Code-for-girl-Banner-600x315.webp" alt="vue.js">
-            <div class="information">
-              <div class="course_time">
-                <span>2021/10月班</span>
+          <div class="course_detail">
+            <div class="july_course">
+              <img src="img/Ruby-Banner-600x315.webp" alt="vue.js">
+              <div class="information">
+                <div class="course_time">
+                  <span>2021/7月班</span>
+                </div>
+                <div class="lecturer">
+                  <span class="name">講師:高見龍 (Eddie kao)</span>
+                  <span class="advanced_course">進階課程</span>
+                </div>
               </div>
-              <div class="lecturer">
-                <span class="name">講師:李建杭 (Amos Lee)</span>
-                <span class="beginner_course">入門課程</span>
+            </div>
+          </div>
+
+          <div class="course_detail">
+            <div class="july_course">
+              <img src="img/Code-for-girl-Banner-600x315.webp" alt="vue.js">
+              <div class="information">
+                <div class="course_time">
+                  <span>2021/10月班</span>
+                </div>
+                <div class="lecturer">
+                  <span class="name">講師:李建杭 (Amos Lee)</span>
+                  <span class="beginner_course">入門課程</span>
+                </div>
               </div>
             </div>
           </div>
@@ -1114,7 +1271,10 @@
   </section>
 
 
-  <section class="learning path_section">
+
+  <section class="learning_path_section">
+    <div class="div_style_bar_3">
+    </div>
     <div class="learning_path_div">
       <h2>掌握自己的學習路徑</h2>
       <h4>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h4>
@@ -1283,7 +1443,9 @@
 
   </section>
 
-  <section class="corner_style2"></section>
+
+  <section class="corner_style2">
+  </section>
 
   <section class="section_footer_background">
     <section class="container_footer">
@@ -1328,16 +1490,7 @@
         </div>
       </div>
 
-      <div class="footer_icons">
 
-
-
-
-
-
-
-
-      </div>
 
 
 
@@ -1345,6 +1498,16 @@
 
 
     </section>
+    <div class="div_footer_content">
+      <div class="footer_icons">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-medium-m"></i></a>
+        <a href=""><i class="fab fa-line"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
   </section>
 
   <p class="footer_5xRuby">© 2014 - 2021 五倍紅寶石程式資訊教育股份有限公司 (5xRuby Training Group CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
