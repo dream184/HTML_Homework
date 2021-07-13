@@ -10,8 +10,9 @@
 
   <style>
     * {
+      margin: 0;
+      padding: 0;
       list-style: none;
-
     }
 
     h3 {
@@ -22,16 +23,13 @@
       margin: 2px 0;
     }
 
-
     .container {
       display: flex;
       flex-direction: column;
       width: 960px;
       height: 812px;
       margin: 150px auto;
-      /* border: 1px solid red; */
       position: relative;
-
     }
 
     .box {
@@ -39,7 +37,6 @@
       height: 290px;
       background-color: #F3F3F3;
       margin-left: auto;
-      /* border: 1px solid red; */
       z-index: -1;
       position: relative;
       top: 50px;
@@ -50,8 +47,9 @@
       height: 430px;
       margin: 0 auto;
       position: relative;
-      bottom: 191px;
+      bottom: 190px;
       z-index: 0;
+
     }
 
 
@@ -61,18 +59,18 @@
       position: relative;
       z-index: 2;
       left: 770px;
-      bottom: 400px
+      bottom: 430px
     }
 
 
 
     .feature {
-      /* border: 1px solid red; */
       position: absolute;
       background-color: #000000;
       color: white;
       width: 355px;
       z-index: 1;
+
     }
 
     .feature .title {
@@ -81,9 +79,12 @@
       /* align-items: center; */
     }
 
+
+
     h1 {
+
       display: inline-block;
-      margin: 0;
+      margin: 0 10px;
       height: 100px;
       font-size: 50px;
       font-weight: normal;
@@ -99,17 +100,29 @@
     .revolution {
       width: 628px;
       max-height: 275px;
-      /* border: 1px solid red; */
       position: absolute;
       background-color: #EEEEEE;
       line-height: 1;
-      padding: auto;
-      bottom: 30px;
+      padding: 10px;
+      bottom: 110px;
       z-index: 1;
+      left: 60px;
     }
 
     .revolution h3 {
       color: #BB0404;
+      margin-top: 0;
+      display: flex;
+     
+    }
+
+    .revolution h3:after {
+      content: '';
+      width: 60%;
+      height: 1px;
+      background-color: red;
+      color:red;
+      margin: auto 5px;
     }
 
 
@@ -118,14 +131,13 @@
     }
 
     .revolution.two {
-      bottom: 125px;
+      bottom: 178px;
       right: 0px;
     }
 
     .box.two {
       margin: auto;
       position: relative;
-
       left: 80px;
       top: 20px;
 
@@ -137,8 +149,12 @@
     }
 
     .youtube.two {
-      left: 8px;
+      left: 10px;
       bottom: 470px;
+    }
+
+    .content {
+      padding: 0px 10px 10px;
     }
   </style>
 </head>
@@ -146,72 +162,46 @@
 <body>
 
   <section>
-
-
-
-
-
     <div class="container">
-
       <div class="feature one">
         <div class="title">
           <h1><span>01</span>操控樂趣</h1>
         </div>
-        <div class="content"></div>
-        <h3>人人都滿意的駕駛體驗</h3>
-        <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+        <div class="content">
+          <h3>人人都滿意的駕駛體驗</h3>
+          <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+        </div>
       </div>
 
       <div class="box"></div>
 
-
       <img class="position one" src="img/position.png" alt="">
       <img class="youtube one" src="img/youtube.bmp" alt="">
 
-
       <div class="revolution one">
-
         <h3>因為我們做了這些革新</h3>
-
         <h4>低重心測試</h4>
         <p>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。</p>
-
         <h4>車身剛性強化</h4>
         <p>車身結構採用超高強度鋼材，提高車輛穩定度，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</p>
-
         <h4>四輪獨立懸吊</h4>
         <p>搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。</p>
-
-
-
-
-
-
-
-
       </div>
     </div>
 
-
-
     <div class="container">
-
       <div class="feature two">
         <div class="title">
           <h1>安全守護<span>02</span></h1>
         </div>
-        <div class="content"></div>
-        <h3>行車更安心的高剛性車體</h3>
-        <p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。</p>
+        <div class="content">
+          <h3>行車更安心的高剛性車體</h3>
+          <p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。</p>
+        </div>
       </div>
-
       <div class="box two"></div>
-
-
       <img class="position two" src="img/position.png" alt="">
       <img class="youtube two" src="img/youtube.bmp" alt="">
-
-
       <div class="revolution two">
 
         <h3>因為我們做了這些革新</h3>
@@ -225,74 +215,33 @@
       </div>
     </div>
 
-
-
     <div class="container">
-
       <div class="feature three">
         <div class="title">
           <h1><span>03</span>乘坐舒適</h1>
         </div>
-        <div class="content"></div>
-        <h3>令人放鬆舒適的車室空間</h3>
-        <p>車室空間設計注重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+        <div class="content">
+          <h3>令人放鬆舒適的車室空間</h3>
+          <p>車室空間設計注重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+        </div>
       </div>
-
       <div class="box three"></div>
-
 
       <img class="position three" src="img/position.png" alt="">
       <img class="youtube three" src="img/youtube.bmp" alt="">
 
-
       <div class="revolution three">
-
         <h3>因為我們做了這些革新</h3>
-
         <h4>駕駛位置最佳化</h4>
         <p>針對駕駛位置進行徹底的修改，讓駕駛者可如同握手般自然且舒適地操控方向盤。</p>
-
         <h4>駕馭視野佳</h4>
         <p>考量駕駛坐進車內的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>
-
         <h4>更寧靜的車室</h4>
         <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
-
-
-
-
-
-
-
-
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </section>
-
 
 </body>
 
