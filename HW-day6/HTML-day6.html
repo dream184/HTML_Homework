@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
+  <script src="https://kit.fontawesome.com/8f41ff9b37.js" crossorigin="anonymous"></script>
   <style>
     header {
       width: 100%;
@@ -53,19 +54,492 @@
     }
 
     .slide-caption {
-      border: 5px solid red;
-      height: 850px;
+      border: 1px solid red;
+
       width: 100%;
       background-color: white;
       background-image: url(img/Banner.bmp);
 
-      clip-path: circle(55.0% at 100% 50%);
+
+    }
+
+    /* .slide-caption::after {
+      display: block;
+      content: '';
+      background-color: #fff;
+      weight: 50%;
+      height: 850px;
+      clip-path: circle(58.2% at 100% 50%); 
+      z-index: -1;      
+    } */
+
+    .slide-container {
+      display: flex;
+      justify-content: space-between;
+      width: 1200px;
+      margin: auto;
+      border: 1px solid red;
+    }
+
+    .slide-title {
+      width: 40%;
+      border: 1px solid red;
+    }
+
+
+
+    .slide-image {
+      width: 40%;
+      border: 1px solid red;
+    }
+
+    .slide-image img {
+      width: 100%;
+    }
+
+
+    .slide-title h1 {
+      font-size: 70px;
+      color: white;
+      margin-top: 55px;
+    }
+
+    .slide-title h3 {
+      font-size: 20px;
+      color: white;
+
+    }
+
+    .slide-title p {
+      font-size: 18px;
+      color: white;
+      margin: 21px 0 20px;
+    }
+
+    .pagination span {
+      display: inline-block;
+      font-size: 50px;
+      color: white;
+      margin: 0 11px 0 0;
+      padding: 0 31px 11px 0;
+    }
+
+    .about-us {
+      background-color: #F9F9F9;
+      width: 100%;
+    }
+
+    .about-us .container {
+      display: flex;
+
+      justify-content: center;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .avatar {
+      max-width: 40%;
+    }
+
+    .avatar img {
+      width: 80%;
+    }
+
+    .chef {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+    }
+
+    .chef h3 {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .chef h2 {
+      color: black;
+      font-size: 40px;
+      margin: 23px 0 0;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .chef p {
+      font-size: 16px;
+      color: #000000B3;
+      margin-top: 34px;
+      line-height: 1.5;
+    }
+
+    .chef ul {
+      margin: 24px 0 0;
+    }
+
+    .chef li {
+      color: black;
+      font-size: 18px;
+      line-height: 1.5;
+      text-decoration: none;
+      margin-top: 8px;
+      padding-left: 33px;
+    }
+
+    .chef a {
+      display: inline-block;
+      width: 90px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      background-color: #71B85F;
+      margin: 45px 0 0;
+      padding: 22px 60px;
+      border-radius: 30px;
+    }
+
+
+    .food-packages {
+      background-color: #71B85F;
+      width: 100%;
+      padding: 80px 0 110px;
+    }
+
+    .food-packages .container {
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .food-packages .slogan {
+      display: block;
+      font-size: 20px;
+      color: #FFFFFF80;
+      border: 1px solid red;
+    }
+
+    .food-packages .title {
+      display: block;
+      font-size: 40px;
+      color: white;
+      font-weight: bold;
+      margin: 23px 0 0;
+    }
+
+    .food-packages .items-group {
+      display: flex;
+      justify-content: space-evenly;
+      width: 1200px;
+      margin: 70px 0 0;
+    }
+
+    .food-packages .item {
+      width: 335px;
+      margin: 0 17.5px 0 17.5px;
+      padding: 48px 10px 68px 36px;
+      background-color: #fff;
+      border-radius: 15px 50px 15% 15%;
+      position: relative;
+    }
+
+    .product-img {
+      width: 176px;
+      height: 176px;
+      position: absolute;
+      top: -15px;
+      right: -10px;
+    }
+
+    .item-container h3 {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      font-size: 80px;
+    }
+
+    .product-price:before {
+      content: "$";
+      font-size: 20px;
+      position: relative;
+      bottom: 40px;
+    }
+
+    .product-price:after {
+      content: "PER DAY";
+      font-size: 16px;
+      position: relative;
+      right: 70px;
+      top: 20px;
+
+    }
+
+    .item-container p {
+      margin-top: 45px;
+      line-height: 1.7;
+    }
+
+    .item-container .btn {
+      display: block;
+      box-sizing: border-box;
+      width: 215px;
+      height: 60px;
+
+      margin-top: 20px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 40px 40px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #71B85F;
+    }
+
+    .item-container .pdf {
+      display: block;
+      width: 137px;
+      color: black;
+      margin: 30px 0 0 10px;
+      text-decoration: none;
+      padding: 0 0 5px 0;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
+
+    .method-eating {
+      background-color: #fff;
+      width: 100%;
+      padding: 80px 0 120px;
+    }
+
+    .method-eating .container {
+      width: 1200px;
+      display: flex;
+      flex-direction: column;
+      border: 1px soilid red;
+      margin: auto;
+    }
+
+    .method-title {
+      font-size: 20px;
+      color: #00000080;
+    }
+
+    .method-title2 {
+      font-size: 40px;
+      color: #151515;
+      margin: 23px 0 0;
+    }
+
+    .items-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 75px 0 0;
+      border: 1px solid red;
+    }
+
+    .items-container .method:nth-child(1) {
+      background-color: #FFF8BD;
+      width: 300px;
+      margin-left: 20px;
+      border-radius: 0 0 50px 0;
+
+    }
+
+    .items-container .method:nth-child(1):after {
+      display: block;
+      content: "";
+      background-image: url("img/arrow-110x14.png");
+      width: 111px;
+      height: 14px;
+      background-color: white;
+      position: relative;
+      bottom: 50%;
+      left: 104%;
+    }
+
+    .items-container .method:nth-child(2) {
+      background-color: #ECFCF9;
+      width: 300px;
+      border-radius: 0 0 50px 0;
+
+    }
+
+    .items-container .method:nth-child(3) {
+      background-color: #DFF9D9;
+      margin-right: 20px;
+      width: 300px;
+      border-radius: 0 0 50px 0;
+      position: relative;
+
+    }
+
+    .items-container .method:nth-child(3):before {
+      display: block;
+      content: "";
+      background-image: url("img/arrow-110x14.png");
+      background-position: top 14px;
+      width: 111px;
+      height: 14px;
+      background-color: white;
+      position: absolute;
+      bottom: 50%;
+      left: -40%;
+
+
+    }
+
+    .method .number {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      color: #00000080;
+      font-size: 25px;
+      text-align: center;
+      line-height: 60px;
+      border-radius: 50px;
+      margin: -20px 0 0 -20px;
+      box-shadow: 6px 8px 15px gray;
+    }
+
+    .method-intro {
+      padding: 0px 15px 26px 40px;
+    }
+
+    .method-intro h3 {
+      font-size: 20px;
+      color: #000000;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    .method-intro p {
+      font-size: 16px;
+      color: #000000;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+
+    .product-feature {
+      background-color: #71B85F;
+      width: 100%;
+      padding: 140px 0 130px;
+
+    }
+
+
+
+    .feature-container {
+      width: 1200px;
+      margin: auto;
+      border: 1px solid red;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      position: relative;
+    }
+
+    .food-pic-container {
+      display: inline-block;
+    }
+
+    .feature-container .pic-1 {
+      position: relative;
+      top: 80px;
+
+    }
+
+    .feature-container .pic-2 {
+      position: relative;
+      /* bottom: 100px; */
+      width: 40%;
+      top: 10px;
+      left: 20px;
+
+    }
+
+    .feature-container .pic-3 {
+      position: relative;
+      width: 50%;
+      left: 70px;
+      top: 30px;
+
+
+    }
+
+    .feature-container .pic-4 {
+      position: relative;
+      width: 30%;
+      left: 70px;
+      bottom: 60px
+    }
+
+    .food-pic-container {
+      width: 700px;
+      border: 1px solid red;
+      position: absolute;
+      top: -120px;
+      right: -203px;
+      box-sizing: border-box;
+    }
+
+    .food-pic-container img {
+      display: inline-block;
+      width: 45%;
+    }
+
+
+
+
+
+    .features-group {
+      display: flex;
+      flex-wrap: wrap;
+      width: 700px;
+      border: 1px solid red;
+
+    }
+
+
+
+    .feature-item {
+      width: 320px;
+      border: 0px solid red;
+      color: white;
+      margin: 0 0 40px;
+      padding: 0 15px;
+    }
+
+    .feature-title {
+      display: flex;
+      vertical-align: center;
+    }
+
+
+    .feature-title h3 {
+      font-size: 20px;
+      margin: auto 0 auto 20px;
+      border: 1px solid red;
+    }
+
+    .feature-item p {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+
+    .feature-item i {
+      font-size: 40px;
     }
   </style>
 </head>
 
 <body>
-
   <header>
     <nav class="menu">
       <div class="container">
@@ -88,31 +562,221 @@
     <div class="slide-container">
       <div class="slide-title">
         <h3>Welcome to Plate</h3>
+        <h1>DELIVERY <br> SERVICE</h1>
         <p>Plate offers quick delivery of organic & healthy food all over the state.</p>
         <div class="pagination">
-          <p>Why choose Plate</p>
           <span>01</span>
           <span>02</span>
           <span>03</span>
           <span>04</span>
+          <p>Why choose Plate</p>
         </div>
 
       </div>
-      <div class="slide-image"></div>
+      <div class="slide-image">
+        <img src="img/[livedemo00.template-help.com][28]slider-01-671x671.png" alt="food">
+      </div>
     </div>
 
   </section>
 
+  <section class="about-us">
+    <div class="container">
+      <div class="avatar">
+        <img src="img/[livedemo00.template-help.com][982]home-01-455x685.png" alt="">
+      </div>
+      <div class="chef">
+        <h3>ABOUT US</h3>
+        <h2>HEALTHY FOOD <br>
+          CAN BE DELICIOUS</h2>
+        <p>Plate was established in 2013, as a reliable food service provider where anyone could order healthy food they
+          like.</p>
+        <ul>
+          <li>Choose gluten-free meals from our menu</li>
+          <li>The freshest ingredients for every dish</li>
+          <li>Get great discounts when ordering for 2+ people</li>
+        </ul>
+        <a href="">READ MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-packages">
+    <div class="container">
+      <h3 class="slogan">What we Offer</h3>
+      <h2 class="title">Food packages</h2>
+      <div class="items-group">
+
+
+        <div class="item">
+          <div class="item-container">
+            <div class="product-img">
+              <img src="img/[livedemo00.template-help.com][704]product-01-176x176.png" alt="">
+            </div>
+            <h3>DETOX</h3>
+            <div class="product-price">15</div>
+            <p>The best choice if you are looking for tasty &amp; light yet healthy food to start your day full of
+              energy.</p>
+            <a href="#" class="btn">ORDER NOW</a>
+            <a href="#" class="pdf">OPEN MENU (PDF)</a>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <div class="item-container">
+            <div class="product-img">
+              <img src="img/[livedemo00.template-help.com][334]product-02-176x176.png" alt="">
+            </div>
+            <h3>BALANCED</h3>
+            <div class="product-price">30</div>
+            <p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
+            <a href="#" class="btn">ORDER NOW</a>
+            <a href="#" class="pdf">OPEN MENU (PDF)</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-container">
+            <div class="product-img">
+              <img src="img/[livedemo00.template-help.com][704]product-01-176x176.png" alt="">
+            </div>
+            <h3>VEGAN</h3>
+            <div class="product-price">22</div>
+            <p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>
+            <a href="#" class="btn">ORDER NOW</a>
+            <a href="#" class="pdf">OPEN MENU (PDF)</a>
+          </div>
+        </div>
+      </div>
 
 
 
 
 
-  <section class="about-us"></section>
-  <section class="food-pachages"></section>
-  <section class="method"></section>
-  <section class="food-feature"></section>
+
+  </section>
+
+  <section class="method-eating">
+    <div class="container">
+      <h3 class="method-title">HOW IT WORKS</h3>
+      <h2 class="method-title2">3 STEPS TO HEALTHY EATING</h2>
+      <div class="items-container">
+        <div class="method">
+          <div class="number">01</div>
+          <div class="method-intro">
+            <h3>CHOOSE <br>
+              A FOOD PACKAGE</h3>
+            <p>First, select the package that <br>you prefer the most.</p>
+          </div>
+        </div>
+
+        <div class="method">
+          <div class="number">02</div>
+          <div class="method-intro">
+            <h3>CUSTOMIZE YOUR <br> MENU</h3>
+            <p>After that, feel free to change <br>and customize your menu.</p>
+          </div>
+        </div>
+
+        <div class="method">
+          <div class="number">03</div>
+          <div class="method-intro">
+            <h3>SELECT A DELIVERY <br>
+              ADDRESS & TIME</h3>
+            <p>Finally, let us know where and <br>when to deliver your food.</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <section class="product-feature">
+    <div class="feature-container">
+      <div class="features-group">
+
+        <div class="feature-item">
+          <div class="feature-title">
+            <i class="far fa-gem"></i>
+            <h3>QUALITY</h3>
+          </div>
+          <p>
+            We work with the best suppliers to make sure you get the top-quality dishes, beverages, and service.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-title">
+            <i class="fas fa-leaf"></i>
+            <h3>ORGANIC</h3>
+          </div>
+          <p>
+            All ingredients we use are 100% organic and fresh. Such approach makes our food a lot healthier.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-title">
+            <i class="fas fa-utensils"></i>
+            <h3>TATSTY</h3>
+          </div>
+          <p>
+            Great and unforgettable taste of our dishes is what attracts more and more clients to Plate.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-title">
+            <i class="far fa-minus-square"></i>
+            <h3>DIVERSE</h3>
+          </div>
+          <p>
+            Our team regularly updates the menus to provide you with better food diversity whenever you order.
+          </p>
+        </div>
+
+        <div class="food-pic-container">
+          <img class="pic-1" src="img/[livedemo00.template-help.com][263]home-01-382x375.png" alt="food-pic">
+          <img class="pic-2" src="img/[livedemo00.template-help.com][577]home-02-293x293.png" alt="food-pic">
+          <img class="pic-3" src="img/[livedemo00.template-help.com][569]home-03-461x407.png" alt="food-pic">
+          <img class="pic-4" src="img/[livedemo00.template-help.com][261]home-04-191x191.png" alt="food-pic">
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </section>
+
   <section class="customer-feedback">
+    <div class="feedback-container"></div>
+
+
+
   </section>
   <footer></footer>
 
