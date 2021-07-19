@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      border: 1px solid grey;
+      margin: 20px;
+    }
+
+    .pic {
+      padding: 1%;
+      width: 98%;
+      /* border-bottom: 1px solid grey; */
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .content {
+      width: 98%;
+      padding: 1%;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .pic {
+        width: 50%;
+      }
+
+      .content {
+        width: 50%;
+      }
+
+      .container:nth-child(even) .pic {
+        position: relative;
+        left: 50%;
+      }
+
+      .container:nth-child(even) .content {
+        position: relative;
+        right: 50%;
+      }
+
+
+
+
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="pic">
+      <img src="https://picsum.photos/300/250/?random=1">
+    </div>
+    <div class="content">
+      <h3>title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quisquam corrupti ipsum voluptatum deleniti
+        illum quae sunt repellat. Sed est libero rerum, dignissimos aspernatur nostrum nisi architecto iure nulla
+        doloribus!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="pic">
+      <img src="https://picsum.photos/300/250/?random=2">
+    </div>
+    <div class="content">
+      <h3>title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quisquam corrupti ipsum voluptatum deleniti
+        illum quae sunt repellat. Sed est libero rerum, dignissimos aspernatur nostrum nisi architecto iure nulla
+        doloribus!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="pic">
+      <img src="https://picsum.photos/300/250/?random=3">
+    </div>
+    <div class="content">
+      <h3>title</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quisquam corrupti ipsum voluptatum deleniti
+        illum quae sunt repellat. Sed est libero rerum, dignissimos aspernatur nostrum nisi architecto iure nulla
+        doloribus!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
